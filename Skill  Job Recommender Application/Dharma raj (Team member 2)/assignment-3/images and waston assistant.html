@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/style_page.css</head>
+    <body>
+        <h2>GALLERY</h2>
+        <div id="gallery">
+            <img src="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/1379320.jpg">
+            <img src="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/HD-download-college-wallpapers.jpg">
+            <img src="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/Snowy_Smith_1.jpg">
+            <img src="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/fall-zoom-5.jpg">
+            <img src="https://dh-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/pharmcy.jpg">
+        </div>
+        <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "02c236cf-7da6-4c4f-82c1-11510d95a77e", // The ID of this integration.
+            region: "jp-tok", // The region your integration is hosted in.
+            serviceInstanceID: "3969cf09-42c4-41a6-8124-d72b056c6350", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
+
+    </body>
+</html>
