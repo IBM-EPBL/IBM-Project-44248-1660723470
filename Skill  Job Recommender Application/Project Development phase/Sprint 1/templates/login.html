@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url("https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/stylish-white-background-with-diagonal-lines_1017-33199.webp");
+
+        }
+
+        .nav-item:hover {
+            border-bottom-style: solid;
+            border-color: red;
+        }
+    </style>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar bg-info navbar-expand-sm shadow-lg mb-5 ">
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./login.html"
+                        style="border-bottom-style: solid;border-color: red;">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./signup.html">SIGNUP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/about">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <center> {{ msg }} </center>
+
+    <section class="form " style="margin-top: 50px;">
+        <div class="container card shadow p-3 mb-5 bg-body rounded" style="width: 50%;">
+            <div class="col-lg-7 px-5">
+                <h1 class="font-weight-bold py-3">Login</h1>
+                <h4>Sign into your account</h4>
+                <form method="POST">
+                    <div style="padding: 10px;">
+                        <div>
+                            <i class="fas fa-user-plus cust" aria-hidden="true"></i>
+                            <input type="email" placeholder="Email" class="form-control" name="email">
+                        </div>
+                    </div>
+                    <div style="padding: 10px;">
+                        <div>
+                            <i class="fas fa-user-plus cust" aria-hidden="true"></i>
+                            <input type="password" placeholder="********" class="form-control" name="password">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-lg-7" style="padding: 10px;">
+                            <button type="submit" class="btn btn-info ">Login</button>
+                        </div>
+                    </div>
+                    <a href="#"><b>Forgot Password</b></a>
+                    <p>
+                        <b>Don't have an account ?<a href="signup.html"> Register now.</b>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
