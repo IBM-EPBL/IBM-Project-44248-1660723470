@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/style_page.css</head>
+    <body>
+        <h2>GALLERY</h2>
+        <div id="gallery">
+            <img src="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/Baldwin-1-10-Reasons-to-Donate-Blood.jpg">
+            <img src="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/Motiv_10_Sprache-3@2x-1364x613.png">
+            <img src="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/blood-1813410_1280-1.jpg">
+            <img src="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/cartoon-blood-donation-background_52683-70799.webp">
+            <img src="https://in-09.s3.jp-tok.cloud-object-storage.appdomain.cloud/donor.jpg">
+        </div>
+        <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "537dfd5b-0b93-4015-8cf8-f26e2df03290", // The ID of this integration.
+            region: "jp-tok", // The region your integration is hosted in.
+            serviceInstanceID: "e90aa413-ab74-4e40-b286-8c6e9f844ae7", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
